@@ -20,7 +20,7 @@
   <body>
         <div class="jumbotron">
             <div class="container">
-                <h1>You're server is running!</h1>
+                <h1>Your server is running!</h1>
                 Congratulations, your PHP server is now running. You can remove this page, and add in your application!
             </div>
         </div>

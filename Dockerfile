@@ -12,7 +12,8 @@ ENV DEBIAN_FRONTEND noninteractive
 # Add sources for latest nginx
 # Install software requirements
 RUN apt-get update && \
-    apt-get install -y software-properties-common && \
+    apt-get install -y language-pack-gnome-en software-properties-common python-software-properties && locale-gen en_US.UTF-8 && export LC_ALL=en_US.UTF-8 && add-apt-repository ppa:ondrej/php5-5.6 && \
+    apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 4F4EA0AAE5267A6C && \
     nginx=stable && \
     add-apt-repository ppa:nginx/$nginx && \
     apt-get update && \

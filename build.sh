@@ -1,1 +1,1 @@
-docker build -t janorman/nginx-php-fpm .
+docker build -t janorman/nginx-php-fpm:latest .
